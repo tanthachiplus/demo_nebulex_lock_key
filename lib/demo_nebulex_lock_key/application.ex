@@ -23,7 +23,7 @@ defmodule DemoNebulexLockKey.Application do
   end
 
   defp setup_cluster do
-    :demo_fifo_nebulex_ecto
+    :demo_nebulex_lock_key
     |> Application.get_env(:nodes, [])
     |> Enum.each(&:net_adm.ping/1)
   end

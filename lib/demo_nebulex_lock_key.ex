@@ -4,18 +4,24 @@ defmodule DemoNebulexLockKey do
   """
 
 
-  def get_cache(key \\ 1) do
+  def get_cache(key \\ 1, time \\ 1000) do
     ReplicatedCache.transaction([keys: [key], nodes: [:"node1@127.0.0.1", :"node2@127.0.0.1"]], fn ->
       ReplicatedCache.in_transaction?() |> IO.inspect()
+
+      ### sleep time
+      Process.sleep(time)
 
       # get account
       account = ReplicatedCache.get(key)
 
+      # inspect account
+      account |> IO.inspect(label: "account before deposit 100")
+
       # put new balance
       ReplicatedCache.put(key, %{account | balance: account.balance + 100})
 
-      # sleep 5s
-      Process.sleep(5000)
+      # sleep 30s
+      Process.sleep(30000)
 
       # re-get ReplicatedCache
       account = ReplicatedCache.get(key)
