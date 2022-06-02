@@ -1,7 +1,7 @@
 %{
   "decorator": {:hex, :decorator, "1.4.0", "a57ac32c823ea7e4e67f5af56412d12b33274661bb7640ec7fc882f8d23ac419", [:mix], [], "hexpm", "0a07cedd9083da875c7418dea95b78361197cf2bf3211d743f6f7ce39656597f"},
   "jchash": {:hex, :jchash, "0.1.2", "c157534ad219fb5a92986e406c5763ef8da901785430c5853d5ec4de2874b3a0", [:rebar3], [], "hexpm", "3371d73e367e9aecf58bc2bfd8e022032c2b9dad2b715e799a9e33e4af1fef74"},
-  "nebulex": {:hex, :nebulex, "2.3.0", "c8d6d6676a1ff0493251422fdb4c071ce1022a9e94320f85d1c78bac206f5818", [:mix], [{:decorator, "~> 1.4", [hex: :decorator, repo: "hexpm", optional: true]}, {:shards, "~> 1.0", [hex: :shards, repo: "hexpm", optional: true]}, {:telemetry, "~> 0.4 or ~> 1.0", [hex: :telemetry, repo: "hexpm", optional: true]}], "hexpm", "b1bde6083391551375fdc34f752d56e9f6ed2c528637cf7a9fa02cfa59a34596"},
+  "nebulex": {:hex, :nebulex, "2.3.2", "74d8b54e867ca58930edf14de7cc35056cf1ae802bdbc64b3c8c5336234cb1ca", [:mix], [{:decorator, "~> 1.4", [hex: :decorator, repo: "hexpm", optional: true]}, {:shards, "~> 1.0", [hex: :shards, repo: "hexpm", optional: true]}, {:telemetry, "~> 0.4 or ~> 1.0", [hex: :telemetry, repo: "hexpm", optional: true]}], "hexpm", "09e7c2e687a9d4da2cb6bdde90de74170450f17684f7cc5691faa213c5aa5b13"},
   "shards": {:hex, :shards, "1.0.1", "1bdbbf047db27f3c3eb800a829d4a47062c84d5543cbfebcfc4c14d038bf9220", [:make, :rebar3], [], "hexpm", "2c57788afbf053c4024366772892beee89b8b72e884e764fb0a075dfa7442041"},
-  "telemetry": {:hex, :telemetry, "1.0.0", "0f453a102cdf13d506b7c0ab158324c337c41f1cc7548f0bc0e130bbf0ae9452", [:rebar3], [], "hexpm", "73bc09fa59b4a0284efb4624335583c528e07ec9ae76aca96ea0673850aec57a"},
+  "telemetry": {:hex, :telemetry, "1.1.0", "a589817034a27eab11144ad24d5c0f9fab1f58173274b1e9bae7074af9cbee51", [:rebar3], [], "hexpm", "b727b2a1f75614774cff2d7565b64d0dfa5bd52ba517f16543e6fc7efcc0df48"},
 }

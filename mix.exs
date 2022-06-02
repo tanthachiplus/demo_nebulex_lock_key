@@ -22,7 +22,7 @@ defmodule DemoNebulexLockKey.MixProject do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      {:nebulex, "~> 2.2"},
+      {:nebulex, "~> 2.3"},
       # => When using :shards as backend
       {:shards, "~> 1.0"},
       # => When using Caching Annotations

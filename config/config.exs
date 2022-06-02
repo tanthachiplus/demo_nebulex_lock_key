@@ -7,7 +7,7 @@ config :demo_nebulex_lock_key, ReplicatedCache,
   allocated_memory: 2_000_000_000,
   gc_cleanup_min_timeout: :timer.seconds(10),
   gc_cleanup_max_timeout: :timer.minutes(10),
-  backend: :shards,
+  backend: :ets,
   partitions: System.schedulers_online() * 2,
   stats: true,
   nodes: [:"node1@127.0.0.1", :"node2@127.0.0.1"]
